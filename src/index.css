@@ -1,13 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1e29;
+}
+.logo {
+  color: white;
+  margin-bottom: 10px;
+}
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  background-color: #282a36;
+  padding: 25px;
+  border-radius: 7px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.home form {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.input-group input,
+.home form button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+form button {
+  cursor: pointer;
+  background-color: orange;
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+form a {
+  color: white;
+}
+.editorpage {
+  display: flex;
+}
+.editorpage .left {
+  width: 30%;
+  color: white;
+  background-color: #181823;
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.editorpage .right {
+  width: 70%;
+}
+.editorpage button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  font-weight: bold;
+}
+
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+button {
+  cursor: pointer;
 }
